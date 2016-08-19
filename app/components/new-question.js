@@ -7,7 +7,6 @@ export default Ember.Component.extend({
     questionFormShow(){
       this.set('addNewQuestion', true);
     },
-
     newQuestionHide(){
       this.set('addNewQuestion', false);
     },
@@ -28,6 +27,6 @@ export default Ember.Component.extend({
         this.set('photo', "");
         this.set('questionPersonName', "");
 
-    }
+      }
   }
 });

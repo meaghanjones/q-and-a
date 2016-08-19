@@ -11,3 +11,14 @@ h1{
 body {
   font-family: 'Open Sans', sans-serif;
 }
+
+img {
+  max-width: 60%;
+  display: block;
+  margin: auto;
+  border-radius: 25px;
+}
+
+.button-bottom-pad {
+  padding-bottom: 5%;
+}
