@@ -11,9 +11,8 @@ export default Ember.Component.extend({
       this.set('addNewQuestion', false);
     },
     saveQuestion1(){
-      var currentMonth = moment().month() + 1;
       var timeStampQuestion =
-      currentMonth + "/" + moment().month() + "/" + moment().year();
+      moment().format("MMM Do YYYY, h:mm a");
 
       var params = {
         content: this.get('content'),
@@ -26,7 +25,6 @@ export default Ember.Component.extend({
         this.set('content', "");
         this.set('photo', "");
         this.set('questionPersonName', "");
-
       }
   }
 });

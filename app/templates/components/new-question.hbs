@@ -1,9 +1,9 @@
 {{#if addNewQuestion}}
-<h1>New Question</h1>
-  <div>
+<div class="text-center">
+  <h1>New Question</h1>
     <form>
       <div class="form-group">
-        <label for="photo">Photo</label>
+        <label for="photo">Photo of questionable Brazilian item</label>
         {{input value=photo id="photo"}}
       </div>
 
@@ -17,8 +17,10 @@
         {{input value=questionPersonName id="questionPersonName"}}
       </div>
 
-      <button type="button" class = "btn btn-outline btn-primary"  {{action 'saveQuestion1'}}>Save</button>
-      <button type="button" class="btn btn-outline btn-info center-button" {{action 'newQuestionHide'}}>Hide</button>
+      <div class="button-bottom-pad text-center">
+        <button type="button" class = "btn btn-outline btn-primary"  {{action 'saveQuestion1'}}>Save</button>
+        <button type="button" class="btn btn-outline btn-info center-button" {{action 'newQuestionHide'}}>Hide</button>
+      </div>
     </form>
   </div>
 {{else}}
