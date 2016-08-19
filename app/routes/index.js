@@ -3,7 +3,10 @@ import moment from 'moment';
 
 export default Ember.Route.extend({
   model(){
-    return this.store.findAll('question');
+    return Ember.RSVP.hash({
+      answers: this.store.findAll('answer'),
+      questions: this.store.findAll('question')
+    })
     },
 
   actions: {
