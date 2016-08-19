@@ -1,12 +1,11 @@
 import Ember from 'ember';
-import moment from 'moment';
 
 export default Ember.Route.extend({
   model(){
     return Ember.RSVP.hash({
       answers: this.store.findAll('answer'),
       questions: this.store.findAll('question')
-    })
+    });
     },
 
   actions: {
@@ -23,6 +22,7 @@ export default Ember.Route.extend({
       });
       question.save();
       this.transitionTo('index');
+
     }
 
   }

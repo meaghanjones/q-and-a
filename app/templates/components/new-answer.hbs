@@ -1,0 +1,20 @@
+{{#if addNewAnswer}}
+  <h2>New Answer</h2>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="answerPersonName">Your Name:</label>
+        {{input class="form-control" value=answerPersonName id="answerPersonName"}}
+      </div>
+
+      <div class="form-group">
+        <label for="answer">Your Answer:</label>
+        {{input class="form-control" value=answer id="answer"}}
+      </div>
+      <button class="btn btn-primary btn-outline btn-sm" {{action 'saveAnswer1'}}>Save</button>
+     <button type="button" class="btn btn-outline btn-info btn-sm" {{action 'newAnswerHide'}}>Hide</button>
+   </form>
+ </div>
+ {{else}}
+ <button class="btn btn-primary btn-outline btn-sm" {{action 'answerFormShow'}}>Add Answer</button>
+{{/if}}

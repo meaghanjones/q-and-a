@@ -10,5 +10,13 @@
     "content": "I really have no idea what this is called...But I like it!",
     "photo": "https://heimweeinfo.files.wordpress.com/2014/06/brigadeiros.jpg",
     "questionPersonName": "Edu"
-  }]
+  }],
+  "answers" : [{
+    "answerPersonName": "Rhonda",
+    "answer": "That is something yummy"
+  },
+  { "answerPersonName": "Jim",
+    "answer": "looks dangerous"
+  }
+  ]
 }

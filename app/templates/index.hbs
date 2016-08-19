@@ -1,6 +1,13 @@
 {{new-Question saveQuestion2="saveQuestion3"}}
 <ul>
-  {{#each model as |question|}}
+  {{#each model.questions as |question|}}
     {{question-tile question=question updateQuestion="updateQuestion"}}
+  {{/each}}
+</ul>
+
+<ul>
+  {{#each model.answers as |answer|}}
+    <li>{{answer.answerPersonName}}</li>
+    <li>{{answer.answer}}</li>
   {{/each}}
 </ul>

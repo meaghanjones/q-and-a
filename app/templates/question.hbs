@@ -1,3 +1,12 @@
-<h2>What is this?</h2>
+<h2>But Really...what is this?</h2>
 <h3>Help Answer {{model.questionPersonName}}'s Question Asked on {{model.timeStampQuestion}}</h3>
 {{question-detail question=model}}
+
+
+<h4>Answers:</h4>
+  {{#each model.answers as |answer|}}
+    {{answer-tile answer=answer}}
+    <br>
+  {{/each}}
+
+{{new-answer question=model saveAnswer2="saveAnswer3"}}
