@@ -1,5 +1,5 @@
-<li>
-  {{question.photo}}
-  {{question.questionPersonName}}
-  <button {{action 'delete' question}}>Delete Question</button>
-</li>
+<ul class="list-group">
+  <li class="list-group-item">Asked by: {{question.questionPersonName}}</li>
+  <li class="list-group-item"><img src={{question.photo}} alt={{question.content}}></li>
+  <li><button class='btn btn-outline btn-danger btn-sm'{{action 'delete' post}}>Delete</button></li>
+</ul>
