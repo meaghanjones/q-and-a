@@ -36,3 +36,10 @@ nav img {
   margin-left: auto;
   margin-right: auto;
 }
+
+#hero-unit {
+  background-image:url('https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg');
+  background-size:cover;
+  background-color: #EEEEEE;
+  height:300px;
+}
