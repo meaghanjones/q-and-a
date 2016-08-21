@@ -22,14 +22,12 @@ img {
   margin: auto;
   border-radius: 25px;
 }
-
+.page-title{
+  font-size: 3em;
+}
 .button-pad {
   padding-bottom: 5%;
   padding-top: 5%;
-}
-
-nav img {
-  max-width: 7%;
 }
 
 .main-content {
@@ -67,6 +65,11 @@ nav img {
   background-size:cover;
   background-color: #EEEEEE;
   height:300px;
+}
+
+.big-text {
+  font-size: 60px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .faqHeader {

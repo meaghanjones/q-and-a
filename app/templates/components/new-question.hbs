@@ -1,20 +1,23 @@
 {{#if addNewQuestion}}
 <div class="text-center">
   <h1>New Question</h1>
+
     <form>
-      <div class="form-group">
-        <label for="photo">Photo of questionable Brazilian item</label>
-        {{input value=photo id="photo"}}
-      </div>
+      <div class="container">
+        <div class="form-group">
+          <label for="questionPersonName">Your Name:</label>
+          {{input placeholder="e.g. Jane" class="form-control" value=questionPersonName id="questionPersonName"}}
+        </div>
 
-      <div class="form-group">
-        <label for="content">Additional notes</label>
-        {{input value=content id="content"}}
-      </div>
+        <div class="form-group">
+          <label for="photo">URL of Photo of Questionable Brazilian item:</label>
+          {{input placeholder="e.g. https://s3.amazonaws.com/gttwl/attachments/global/1393339878_large.jpeg"class="form-control" value=photo id="photo"}}
+        </div>
 
-      <div class="form-group">
-        <label for="questionPersonName">Your Name</label>
-        {{input value=questionPersonName id="questionPersonName"}}
+        <div class="form-group">
+          <label for="content">Additional notes:</label>
+          {{textarea rows="5" placeholder="e.g. I saw this on my wall in Rio and I want to know what it is!" class="form-control" value=content id="content"}}
+        </div>
       </div>
 
       <div class="button-pad text-center">
