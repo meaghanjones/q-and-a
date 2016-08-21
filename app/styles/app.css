@@ -8,6 +8,10 @@ footer {
 h1{
   font-family: 'Bowlby One SC', cursive;
 }
+h2{
+  font-family: 'Bowlby One SC', cursive;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
 }
@@ -19,8 +23,9 @@ img {
   border-radius: 25px;
 }
 
-.button-bottom-pad {
+.button-pad {
   padding-bottom: 5%;
+  padding-top: 5%;
 }
 
 nav img {
@@ -36,10 +41,60 @@ nav img {
   margin-left: auto;
   margin-right: auto;
 }
+.hero-unit h1 {
+  color: #EEEEEE;
+  font-size: 100px;
+  letter-spacing: -1px;
+  line-height: 1;
+  margin-top: .8em;
+  margin-bottom: 0;
+  font-family: 'Bowlby One SC', cursive;
+  text-align: center;
+}
+.hero-unit h2{
+  color: #EEEEEE;
+  font-size: 75px;
+  letter-spacing: -1px;
+  line-height: 1;
+  margin-top: .2em;
+  margin-bottom: 0;
+  font-family: 'Bowlby One SC', cursive;
+  text-align: center;
+}
 
-#hero-unit {
+.hero-unit {
   background-image:url('https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg');
   background-size:cover;
   background-color: #EEEEEE;
   height:300px;
+}
+
+.faqHeader {
+  font-size: 27px;
+  margin: 20px;
+}
+
+.panel-heading [data-toggle="collapse"]:after {
+  font-family: 'FontAwesome';
+  content: "\f128";
+  float: right;
+  color: #5cb85c;
+  font-size: 18px;
+  line-height: 22px;
+  /* rotate "play" icon from > (right arrow) to down arrow */
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.panel-heading [data-toggle="collapse"].collapsed:after {
+  /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  color: #454444;
 }

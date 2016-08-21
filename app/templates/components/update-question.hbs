@@ -1,5 +1,5 @@
 {{#if updateQuestionForm}}
-  <div class="text-center">
+  <div class="text-center button-pad">
     <form>
       <div class="form-group">
         <label for="photo">New Photo of questionable Brazilian item</label>
@@ -12,9 +12,12 @@
       </div>
       <div class="button-bottom-pad text-center">
         <button type="button" class = "btn btn-outline btn-primary"  {{action 'updateQuestion' question}}>Save</button>
+        <button type="button" class="btn btn-outline btn-info center-button" {{action 'newUpdateHide'}}>Hide</button>
       </div>
     </form>
   </div>
 {{else}}
-  <button {{action 'updateQuestionForm'}}>Update</button>
+
+  <i {{action 'updateQuestionForm'}} class="fa fa-pencil" aria-hidden="true"></i>
+
 {{/if}}

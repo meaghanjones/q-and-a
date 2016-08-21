@@ -17,14 +17,14 @@
         {{input value=questionPersonName id="questionPersonName"}}
       </div>
 
-      <div class="button-bottom-pad text-center">
+      <div class="button-pad text-center">
         <button type="button" class = "btn btn-outline btn-primary"  {{action 'saveQuestion1'}}>Save</button>
         <button type="button" class="btn btn-outline btn-info center-button" {{action 'newQuestionHide'}}>Hide</button>
       </div>
     </form>
   </div>
 {{else}}
-<div class="text-center button-bottom-pad">
+<div class="text-center button-pad">
   <button type="button" class = "btn btn-success btn-lg" {{action 'questionFormShow'}}>Ask a New Question</button>
 </div>
 {{/if}}

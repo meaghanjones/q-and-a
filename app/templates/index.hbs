@@ -1,8 +1,14 @@
-<div id="hero-unit">
+<div class="hero-unit">
+  <div class="container">
+    <h1>What is it?</h1>
+    <h2>Brazil Edition</h2>
+  </div>
 </div>
 {{new-Question saveQuestion2="saveQuestion3"}}
-<ul>
-  {{#each model.questions as |question|}}
-    {{question-tile question=question updateQuestion="updateQuestion"}}
-  {{/each}}
-</ul>
+<div class="container">
+  <ul>
+    {{#each model.questions as |question|}}
+      {{question-tile question=question updateQuestion="updateQuestion"}}
+    {{/each}}
+  </ul>
+</div>
