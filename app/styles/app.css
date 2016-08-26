@@ -101,3 +101,10 @@ img {
   transform: rotate(90deg);
   color: #454444;
 }
+
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
