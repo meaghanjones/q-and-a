@@ -9,6 +9,10 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('question', {path: '/question/:question_id'});
   this.route('faq');
+  this.route('food');
+  this.route('animal');
+  this.route('bug');
+  this.route('nature');
 });
 
 export default Router;
