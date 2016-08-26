@@ -1,8 +1,14 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  viewLater: Ember.inject.service(),
+
   updateQuestionForm: false,
   actions: {
+    addToLater(item) {
+      this.get('viewLater').add(item);
+    },
+
     updateQuestionForm(){
       this.set('updateQuestionForm', true);
     },

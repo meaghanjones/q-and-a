@@ -2,6 +2,7 @@
   <li class="list-group-item">Asked by {{question.questionPersonName}} on {{question.timeStampQuestion}}
   {{#link-to 'question' question.id}} Click Here to Answer or Find Out What It Is {{/link-to}} {{answers-amount question}}</li>
   <li class="list-group-item"><img src={{question.photo}} alt={{question.content}}>
+    <button {{action 'addToLater' question}}> Add to View Later</button> 
     {{#if updateQuestionForm}}
     <div class="text-center button-pad">
       <form>
