@@ -7,8 +7,6 @@
 {{new-Question saveQuestion2="saveQuestion3"}}
 <div class="container">
   <ul>
-    {{#each model.questions as |question|}}
-      {{question-tile question=question updateQuestion="updateQuestion"}}
-    {{/each}}
+    {{questions-list question=model updateQuestion="updateQuestion"}}
   </ul>
 </div>

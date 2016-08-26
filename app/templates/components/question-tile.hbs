@@ -1,5 +1,38 @@
 <ul class="list-group">
   <li class="list-group-item">Asked by {{question.questionPersonName}} on {{question.timeStampQuestion}}
   {{#link-to 'question' question.id}} Click Here to Answer or Find Out What It Is {{/link-to}} {{answers-amount question}}</li>
-  <li class="list-group-item"><img src={{question.photo}} alt={{question.content}}>{{update-question question=question updateQuestion="updateQuestion"}}</li>
+  <li class="list-group-item"><img src={{question.photo}} alt={{question.content}}>
+    {{#if updateQuestionForm}}
+    <div class="text-center button-pad">
+      <form>
+        <div class="form-group">
+          <label for="photo">New Photo of questionable Brazilian item</label>
+          {{input value=photo id="photo" placeholder=question.photo}}
+        </div>
+
+        <div class="form-group">
+          <label for="content">Edit Additional Notes</label>
+          {{input value=content id="content" placeholder=question.content}}
+        </div>
+
+        <div class="form-group">
+          <label for="tag">Change your tag!</label>  &nbsp;
+          {{radio-button value='animal' checked=tag}} animal  &nbsp;
+          {{radio-button value='bug' checked=tag}} bug  &nbsp;
+          {{radio-button value='food' checked=tag}} food  &nbsp;
+          {{radio-button value='nature' checked=tag}} nature
+        </div>
+
+        <div class="button-bottom-pad text-center">
+          <button type="button" class = "btn btn-outline btn-primary"  {{action 'updateQuestion' question}}>Save</button>
+          <button type="button" class="btn btn-outline btn-info center-button" {{action 'newUpdateHide'}}>Hide</button>
+        </div>
+      </form>
+    </div>
+  {{else}}
+
+    <i {{action 'updateQuestionForm'}} class="fa fa-pencil" aria-hidden="true"></i>
+
+  {{/if}}
+  </li>
 </ul>

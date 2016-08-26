@@ -11,15 +11,12 @@ export default Ember.Component.extend({
       this.set('addNewQuestion', false);
     },
     saveQuestion1(){
-      var timeStampQuestion =
-      moment().format("MMM Do YYYY, h:mm a");
-
       var params = {
         content: this.get('content'),
         photo: this.get('photo'),
         questionPersonName: this.get('questionPersonName'),
         tag: this.get('tag'),
-        timeStampQuestion: timeStampQuestion
+        timeStampQuestion: moment().format("MMM Do YYYY, h:mm a")
       };
         this.set('addNewQuestion', false);
         this.sendAction('saveQuestion2', params);
