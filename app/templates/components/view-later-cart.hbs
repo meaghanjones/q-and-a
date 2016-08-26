@@ -1,3 +1,9 @@
-{{#each viewLater.items as |item|}}
-  {{item.photo}} -- {{item.content}}
-{{/each}}
+  <div id="sidebar-wrapper">
+    <div class="container">
+      <ul class="sidebar-nav">
+        {{#each viewLater.items as |item|}}
+          <li>{{item.photo}} -- {{item.content}}<a href="#">View it here</a></li>
+        {{/each}}
+      </ul>
+    </div>
+</div>

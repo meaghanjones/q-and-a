@@ -1,14 +1,26 @@
-<div class="container main-content">
-<h2 class="page-title text-center">But Really...what is this?</h2>
-<h3>Help answer {{model.questionPersonName}}'s question about this {{model.tag}} asked on {{model.timeStampQuestion}}</h3>
-{{question-detail question=model}}
+<div id="wrapper">
 
-<br>
-<h4>Answers:</h4>
-  {{#each model.answers as |answer|}}
-    {{answer-tile answer=answer}}
-    <br>
-  {{/each}}
+  {{view-later-cart}}
+  <div id="page-content-wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="container main-content">
+              <h2 class="page-title text-center">But Really...what is this?</h2>
+              <h3>Help answer {{model.questionPersonName}}'s question about this {{model.tag}} asked on {{model.timeStampQuestion}}</h3>
+              {{question-detail question=model}}
 
-{{new-answer question=model saveAnswer2="saveAnswer3"}}
+              <br>
+              <h4>Answers:</h4>
+              {{#each model.answers as |answer|}}
+              {{answer-tile answer=answer}}
+              <br>
+              {{/each}}
+
+              {{new-answer question=model saveAnswer2="saveAnswer3"}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

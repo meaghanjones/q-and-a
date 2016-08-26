@@ -4,12 +4,20 @@
     <h2>Brazil Edition</h2>
   </div>
 </div>
-{{new-Question saveQuestion2="saveQuestion3"}}
-<div class="container">
-  <ul>
-    {{view-later-cart question=model}}
-  </ul>
-  <ul>
-    {{questions-list question=model updateQuestion="updateQuestion"}}
-  </ul>
-</div>
+<div id="wrapper">
+    {{view-later-cart}}
+    <div id="page-content-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="container main-content">
+              {{new-Question saveQuestion2="saveQuestion3"}}
+              <ul>
+              {{questions-list question=model updateQuestion="updateQuestion"}}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
