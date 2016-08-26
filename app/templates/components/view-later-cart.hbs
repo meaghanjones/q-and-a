@@ -1,9 +1,10 @@
   <div id="sidebar-wrapper">
-    <div class="container">
       <ul class="sidebar-nav">
+        <br>
+        <li class="sidebar-brand">Click on the view later button to save items to view later</li>
+        <hr>
         {{#each viewLater.items as |item|}}
-          <li>{{item.photo}} -- {{item.content}}<a href="#">View it here</a></li>
+          <li><img src= {{item.photo}}>{{item.content}}{{#link-to 'question' item.id}}View it here {{/link-to}} </li>
         {{/each}}
       </ul>
-    </div>
 </div>
