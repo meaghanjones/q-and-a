@@ -18,6 +18,7 @@ export default Ember.Component.extend({
         content: this.get('content'),
         photo: this.get('photo'),
         questionPersonName: this.get('questionPersonName'),
+        tag: this.get('tag'),
         timeStampQuestion: timeStampQuestion
       };
         this.set('addNewQuestion', false);
