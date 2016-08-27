@@ -23,6 +23,8 @@ img {
   margin: auto;
   border-radius: 25px;
 }
+
+
 .page-title{
   font-size: 3em;
 }
@@ -103,17 +105,23 @@ img {
   color: #454444;
 }
 
-
-/*side bar nav*/
-#wrapper {
-    padding-left: 0;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+.question-row{
+  margin-top: 20px;
 }
 
 
+/*side bar nav*/
+#wrapper {
+  padding-left: 250px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.container {
+  margin: 50px;
+}
 #sidebar-wrapper {
   z-index: 1000;
   position: fixed;
@@ -131,9 +139,9 @@ img {
 
 
 #page-content-wrapper {
-    width: 100%;
-    position: absolute;
-    padding: 15px;
+  width: 100%;
+  position: absolute;
+  padding: 15px;
 }
 
 /* Sidebar Styles */
@@ -165,7 +173,9 @@ img {
 
 @media(min-width:768px) {
     #wrapper {
-        padding-left: 250px;
+      padding-top: 100px;
+      padding-left: 250px;
+      margin-right:100px;
     }
 
     #wrapper.toggled {
